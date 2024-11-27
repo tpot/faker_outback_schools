@@ -1,0 +1,16 @@
+extends: default
+rules:
+  # Forbid YAML document start marker, '---'
+  document-start:
+    present: false
+  # Require inside space for flow blocks
+  braces:
+    min-spaces-inside: 1
+    max-spaces-inside: 1
+  brackets:
+    min-spaces-inside: 1
+    max-spaces-inside: 1
+  # Indentation
+  indentation:
+    indent-sequences: true
+    spaces: 2
